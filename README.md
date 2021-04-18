@@ -22,7 +22,7 @@ $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
 
 `FILEPATH` must be replaced with the path to your STREAM.txt. For example, if you placed it in C:\MyFiles\Stream\, you would replace `FILEPATH` with `C:\MyFiles\Stream\STREAM.txt`
 
-`COMMAND` is the TwitchyDoom command you wish to execute when this command is called by a viewer. See the list of commands below. If you wanted to use the SpawnMonster command, you would replace `COMMAND` with `SpawnMonster`
+`COMMAND` is the TwitchyDoom command you wish to execute when this command is called by a viewer. See the [list of commands](#command-list) below. If you wanted to use the SpawnMonster command, you would replace `COMMAND` with `SpawnMonster`
 
 `PARAMETERS` are any paramaters the TwitchyDoom command you've chosen supports. Using the same example of SpawnMonster, the parameters desires a monster class to spawn. If you wanted this command to spawn an Archvile, you would replace `PARAMETERS` with `Archvile`
 
