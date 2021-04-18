@@ -8,7 +8,7 @@ First, you must have Streamlabs Chatbot (free) installed and have a working chat
 
 Next, you will need a directory on your computer with a single file in it called STREAM.txt. This file will be written to by the chatbot, and read by GZDoom. You do not need to touch this file after creating it.
 
-Finally, your GZDoom launcher should add this folder to its list of external files (For example: ZDL has a folder+ button), along with the TwitchyDoom pk3 file. You're now ready to begin customzing the bot.
+Finally, your GZDoom launcher should add this folder to its list of external files (For example: ZDL has a folder+ button), along with the TwitchyDoom pk3 file. You're now ready to begin customizing the bot.
 
 To confirm everything is set up, boot up GZDoom and walk forward. You should see a message confirming the game is working. If you don't get a message, TwitchyDoom pk3 is missing. If you get an error, your launcher is not pointing to the STREAM.txt folder correctly.
 
@@ -20,7 +20,7 @@ To add a command that works with TwitchyDoom, first click the Add Command button
 $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
 ```
 
-`FILEPATH` must be replaced with the path to your STREAM.txt. For example, if you placed it in C:\MyFiles\Stream\, you would replace "FILEPATH" with `C:\MyFiles\Stream\STREAM.txt`
+`FILEPATH` must be replaced with the path to your STREAM.txt. For example, if you placed it in C:\MyFiles\Stream\, you would replace `FILEPATH` with `C:\MyFiles\Stream\STREAM.txt`
 
 `COMMAND` is the TwitchyDoom command you wish to execute when this command is called by a viewer. See the list of commands below. If you wanted to use the SpawnMonster command, you would replace `COMMAND` with `SpawnMonster`
 
@@ -41,7 +41,7 @@ Which would trigger the SpawnItem TwitchyDoom command, spawning a Medikit near t
 
 ### `GiveItem` item
 
-Gives the streamer an item directly. `item` must be a valid Inventory class. If successful, a message will be displayed. Any text the user provides afer this command will also be displayed.
+Gives the streamer an item directly. `item` must be a valid Inventory class. If successful, a message will be displayed. Any text the user provides after this command will also be displayed.
 
 ### `SpawnItem` item
 
