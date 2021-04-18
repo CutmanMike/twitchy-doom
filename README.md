@@ -69,4 +69,8 @@ Resurrects monsters near the streamer. `radius` is the range of the resurrection
 
 Gives a random living monster in the level an item. `item` must be a valid Inventory class. Only useful for custom inventory items that effect monsters.
 
+# Creating new Command classes
+
+TODO
+
 <!-- EOF -->
