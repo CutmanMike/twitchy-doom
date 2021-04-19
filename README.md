@@ -45,6 +45,8 @@ Here's an example image of a command that spawns a Cacodemon:
 
 ![Example Command](examples/example_command.png)
 
+Note that you can test your commands even when your stream is offline.
+
 # Command List
 
 ### `GiveItem` item
