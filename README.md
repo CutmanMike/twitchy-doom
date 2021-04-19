@@ -10,6 +10,10 @@ Next, you will need a directory on your computer with a single file in it called
 
 Finally, your GZDoom launcher should add this folder to its list of external files (For example: ZDL has a folder+ button), along with the TwitchyDoom pk3 file. You're now ready to begin customizing the bot.
 
+Here's an example launching with ZDL:
+
+![Example Launch](examples/example_zdl.png)
+
 To confirm everything is set up, boot up GZDoom. You should see a message confirming the game is working. If you don't get a message, TwitchyDoom pk3 is missing. If you get an error, your launcher is not pointing to the STREAM.txt folder correctly.
 
 # Adding Commands
@@ -39,7 +43,7 @@ Which would trigger the SpawnItem TwitchyDoom command, spawning a Medikit near t
 
 Here's an example image of a command that spawns a Cacodemon:
 
-![Example Image](examples/example_command.png)
+![Example Command](examples/example_command.png)
 
 # Command List
 
