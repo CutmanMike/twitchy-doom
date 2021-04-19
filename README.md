@@ -10,7 +10,7 @@ Next, you will need a directory on your computer with a single file in it called
 
 Finally, your GZDoom launcher should add this folder to its list of external files (For example: ZDL has a folder+ button), along with the TwitchyDoom pk3 file. You're now ready to begin customizing the bot.
 
-Here's an example launching with ZDL:
+Here's an example launching with [ZDL](https://zdoom.org/wiki/ZDL):
 
 ![Example Launch](examples/example_zdl.png)
 
