@@ -55,9 +55,13 @@ Gives the streamer an item directly. `item` must be a valid Inventory class. If 
 
 Spawns an item nearby for the streamer. `item` must be a valid Actor class (but not necessarily an Inventory item). The user's name appears above the item.
 
+The user can also send a distance value (in 128 map units) which will try to spawn the item further away from the streamer.
+
 ### `SpawnMonster` monster
 
 Spawns a monster near the streamer (512 or more map units away). If left blank or invalid, a random monster is chosen instead. The monster has the user's name tag above it. If `monster` is invalid or unspecified, a random monster is chosen.
+
+The user can also send a distance value (in 128 map units) which will try to spawn the monster further away from the streamer.
 
 Be aware spawning an actor which then spawns a monster (such as a RandomSpawner) will not be handled properly for spawn collision, and will not have the user's name tag appear.
 
