@@ -49,7 +49,7 @@ Spawns an item nearby for the streamer. `item` must be a valid Actor class (but 
 
 ### `SpawnMonster` monster
 
-Spawns a monster near the streamer (512 or more map units away). If left blank or invalid, a random monster is chosen instead. The monster has the user's name tag above it. If `monster` is invalid or unspecified, a random monster is chosen. A user can add `distant` to the message to try to spawn the monster further away from the streamer.
+Spawns a monster near the streamer (512 or more map units away). If left blank or invalid, a random monster is chosen instead. The monster has the user's name tag above it. If `monster` is invalid or unspecified, a random monster is chosen.
 
 Be aware spawning an actor which then spawns a monster (such as a RandomSpawner) will not be handled properly for spawn collision, and will not have the user's name tag appear.
 
