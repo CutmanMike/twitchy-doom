@@ -6,7 +6,7 @@ TwitchyDoom is a mod for GZDoom that allows Streamlabs Chatbot users to create c
 
 First, you must have Streamlabs Chatbot (free) installed and have a working chatbot linked to your main Twitch account. There are many installation guides and videos on this, but here's the official one: https://cdn.streamlabs.com/chatbot/Documentation_Twitch.pdf
 
-Next, you will need a directory on your computer with a single file in it called STREAM.txt. This file will be written to by the chatbot, and read by GZDoom. You do not need to touch this file after creating it.
+Next, you will need a directory on your computer with a single file in it called STREAM.txt. This file will be written to by the chatbot, and read by GZDoom. You do not need to touch this file after creating it. GZdoom will read the entire directory so don't put any other files in this folder.
 
 Finally, your GZDoom launcher should add this folder to its list of external files (For example: ZDL has a folder+ button), along with the TwitchyDoom pk3 file. You're now ready to begin customizing the bot.
 
@@ -36,6 +36,10 @@ Here's an example of what response field should look like (assuming your STREAM.
 $savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnItem|Medikit|$username|$dummyormsg")
 ```
 Which would trigger the SpawnItem TwitchyDoom command, spawning a Medikit near the player.
+
+Here's an example image of a command that spawns a Cacodemon:
+
+![Example Image](examples/example_command.png)
 
 # Command List
 
