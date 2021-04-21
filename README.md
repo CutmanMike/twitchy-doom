@@ -67,11 +67,11 @@ Note that you can test your commands even when your stream is offline.
 
 These parameters can be used with all commands.
 
-`Delay` - Delays the command by x seconds. Notification messages are sent first, so this is useful if you want to give the player a warning before the command is executed.
+`Delay=x` Delays the command by x seconds. Notification messages are sent first, so this is useful if you want to give the player a warning before the command is executed.
 
-`NoNotify` - Removes any messsages sent to the player from the command, if the command usually sends any.
+`NoNotify=true` - Removes any messsages sent to the player from the command, if the command usually sends any.
 
-`NoName` - Removes the username from any actors spawned via the command that would display them usually.
+`NoName=true` - Removes the username from any actors spawned via the command that would display them usually.
 
 # Creating new Command classes
 
