@@ -1,6 +1,6 @@
 # SpawnItem
 
-Spawns an item in the world.
+Spawns an item in the world. The username of the person who sent the command will appear above it as long as it is in the players's line of sight.
 
 ## Parameters
 ```
