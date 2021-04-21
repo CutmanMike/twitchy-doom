@@ -7,7 +7,7 @@ Spawns an item in the world.
 Actor - The actor to give to the player.
 ```
 
-`Actor` must be a valid Actor class (but not necessarily an Inventory item). The user's name appears above the item.
+`Actor` must be a valid Actor class (but not necessarily an Inventory item). The user's name appears above the item. If the class is a RandomSpawner, it will choose an actor from the result of that RandomSpawner.
 
 ## Examples
 
