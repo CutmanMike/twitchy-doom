@@ -28,7 +28,7 @@ $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
 
 `COMMAND` is the TwitchyDoom command you wish to execute when this command is called by a viewer. See the [list of commands](#command-list) below. If you wanted to use the SpawnMonster command, you would replace `COMMAND` with `SpawnMonster`
 
-`PARAMETERS` are any paramaters the TwitchyDoom command you've chosen supports. Using the same example of SpawnMonster, the parameters desires a monster class to spawn. If you wanted this command to spawn an Archvile, you would replace `PARAMETERS` with `Archvile`
+`PARAMETERS` are any paramaters the TwitchyDoom command you've chosen supports. Parameters are seperated by a comma (no spaces) and each command has specific parameters you can use. Using the same example of SpawnMonster, the command requires an `Actor` parameter to function. If you wanted this command to spawn an Archvile, you would replace `PARAMETERS` with `Actor=Archvile`. See each command's page to find their parameters and what they do.
 
 Note: If you do not wish to declare any parameters or the command does not use them, you must still include all three |'s in the response. I.e SpawnMonster||$username|$dummyormsg
 
@@ -37,7 +37,7 @@ $username and $dummyormsg should be left alone. These retrieve the username and 
 Here's an example of what response field should look like (assuming your STREAM.txt is in C:\MyFiles\Stream\):
 
 ```
-$savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnItem|Medikit|$username|$dummyormsg")
+$savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnItem|Actor=Medikit|$username|$dummyormsg")
 ```
 Which would trigger the SpawnItem TwitchyDoom command, spawning a Medikit near the player.
 
@@ -49,39 +49,19 @@ Note that you can test your commands even when your stream is offline.
 
 # Command List
 
-### `GiveItem` item
+<!-- inter-toc commands -->
 
-Gives the streamer an item directly. `item` must be a valid Inventory class. If successful, a message will be displayed. Any text the user provides after this command will also be displayed.
+* [GiveItem](commands/GiveItem.md)
+* [SpawnItem](commands/SpawnItem.md)
+* [SpawnMonster](commands/SpawnMonster.md)
+* [SpawnFriendlyMonster](commands/SpawnFriendlyMonster.md)
+* [SpawnOnPlayer](commands/SpawnOnPlayer.md)
+* [MassResurrect](commands/MassResurrect.md)
+* [GiveMonsterItem](commands/GiveMonsterItem.md)
+* [MonsterSound](commands/MonsterSound.md)
+* [ChangeMusic](commands/ChangeMusic.md)
 
-### `SpawnItem` item
-
-Spawns an item nearby for the streamer. `item` must be a valid Actor class (but not necessarily an Inventory item). The user's name appears above the item.
-
-The user can also send a distance value (in 128 map units) which will try to spawn the item further away from the streamer.
-
-### `SpawnMonster` monster
-
-Spawns a monster near the streamer (512 or more map units away). If left blank or invalid, a random monster is chosen instead. The monster has the user's name tag above it. If `monster` is invalid or unspecified, a random monster is chosen.
-
-The user can also send a distance value (in 128 map units) which will try to spawn the monster further away from the streamer.
-
-Be aware spawning an actor which then spawns a monster (such as a RandomSpawner) will not be handled properly for spawn collision, and will not have the user's name tag appear.
-
-### `SpawnFriendlyMonster` monster
-
-Spawns a friendly monster next to the streamer. If `monster` is invalid or unspecified, a random monster is chosen. A message is printed when this happens, and the user can add an additional chat message after the command. The monster also has the user's name tag above it along with the tag (ALLY).
-
-### `MonsterSound`
-
-Play a random monster's alert sound at a random volume. The user can specify which monster class to make a sound after the command.
-
-### `RaiseDead` radius
-
-Resurrects monsters near the streamer. `radius` is the range of the resurrection circle in map units. If unspecified, it defaults to 600 map units.
-
-### `GiveMonsterItem` item
-
-Gives a random living monster in the level an item. `item` must be a valid Inventory class. Only useful for custom inventory items that effect monsters.
+<!-- end -->
 
 # Creating new Command classes
 
