@@ -1,6 +1,6 @@
 # SpawnOnPlayer
 
-Spawns an Actor at the player's position. If the actor is a projectile, fire it from the player instead.
+Spawns an Actor at the player's position. If the actor is a projectile, fire it from the player instead. Any text the user provides after this command will also be displayed in a followup message.
 
 ## Parameters
 ```
