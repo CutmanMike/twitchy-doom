@@ -21,3 +21,7 @@ Spawns a friendly imp near the player.
 $savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnFriendlyMonster|Actor=BaronOfHell,NoName=true|$username|$dummyormsg")
 ```
 Spawns a friendly Baron of Hell near the player without the username.
+
+## Screenshots
+
+![screenshot_summonfriend](../screenshots/screenshot_summonfriend.png)
