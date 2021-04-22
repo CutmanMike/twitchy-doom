@@ -1,6 +1,6 @@
 # SpawnMonster
 
-Spawns a monster in the world, which immediately starts hunting the player. The monster has the username of the person who sent the command will appear above it as long as it is in the players's line of sight.
+Spawns a monster in the world, outside of the Player's line of sight, which immediately starts hunting the player. The monster has the username of the person who sent the command will appear above it as long as it is in the players's line of sight.
 
 ## Parameters
 ```
