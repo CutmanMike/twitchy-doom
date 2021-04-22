@@ -8,7 +8,7 @@ Actor - The actor to spawn.
 Distance - The minimum distance away from the player (in 128 map units) in order for the Actor to spawn. Default is 1.
 Distance=Random - Use a random distance.
 Effect - The effect actor to spawn when the Actor is spawned.
-NoLOS - Spawn the actor even if a player is in line of sight.
+NoLOS=true - Spawn the actor even if a player is in line of sight.
 ```
 
 `Actor` should be a valid Actor class. If the monster class is invalid, it will choose a random monster from the existing pool of monsters.
