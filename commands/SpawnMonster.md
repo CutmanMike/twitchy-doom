@@ -27,3 +27,7 @@ Spawns an Archvile near the player.
 $savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnMonster|Actor=Fatso,NoName=true|$username|$dummyormsg")
 ```
 Spawns a Mancubus near the player without the username.
+
+## Screenshots
+
+![screenshot_spawnmonster](../screenshots/screenshot_spawnmonster.png)
