@@ -26,3 +26,9 @@ Spawns a box of rockets near the player for them to pick up.
 $savetofile("C:\MyFiles\Stream\STREAM.txt","GiveItem|Actor=ExplosiveBarrel,NoName=true|$username|$dummyormsg")
 ```
 Spawns an Explosive Barrel near the player, and doesn't show the username above the actor.
+
+
+## Screenshots
+
+![screenshot_spawnitem](../screenshots/screenshot_spawnitem.png)
+
