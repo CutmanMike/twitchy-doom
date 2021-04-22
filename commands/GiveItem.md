@@ -21,3 +21,7 @@ Gives a medikit to the player.
 $savetofile("C:\MyFiles\Stream\STREAM.txt","GiveItem|Actor=InvulnerabilitySphere,NoNotify=true|$username|$dummyormsg")
 ```
 Gives an Invulneraiblity Sphere to the player, but doesn't display any messages.
+
+## Screenshots
+
+![screenshot_giveitem](../screenshots/screenshot_giveitem.png)
