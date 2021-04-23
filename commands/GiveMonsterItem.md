@@ -13,8 +13,6 @@ AddName=true - Add the user's name to the monster too.
 
 If `Radius` is specified, it will try to give the item to a monster near the player within `Radius` * 128 map units. If it can't, the radius is increased until it finds a monster.
 
-``
-
 ## Examples
 
 ```
