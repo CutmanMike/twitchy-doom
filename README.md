@@ -60,6 +60,7 @@ Note that you can test your commands even when your stream is offline.
 * [GiveMonsterItem](commands/GiveMonsterItem.md)
 * [MonsterSound](commands/MonsterSound.md)
 * [ChangeMusic](commands/ChangeMusic.md)
+* [Log](commands/Log.md)
 
 <!-- end -->
 
