@@ -4,7 +4,7 @@ Spawns a monster in the world, outside of the Player's line of sight, which imme
 
 ## Parameters
 ```
-Actor - The actor to spawn. (Required)
+Actor - The actor to spawn.
 Distance - The minimum distance away from the player (in 128 map units) in order for the Actor to spawn. Default is 1.
 Distance=Random - Use a random distance.
 Effect - The effect actor to spawn when the Actor is spawned.
