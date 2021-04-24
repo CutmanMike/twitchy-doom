@@ -4,7 +4,7 @@ Spawns an item in the world, outside of the Player's line of sight. The username
 
 ## Parameters
 ```
-Actor - The actor to give to the player.
+Actor - The actor to give to the player. (Required)
 Distance - The minimum distance away from the player (in 128 map units) in order for the Actor to spawn. Default is 1.
 Distance=Random - Use a random distance.
 Effect - The effect actor to spawn when the Actor is spawned. Default is TeleportFog.
