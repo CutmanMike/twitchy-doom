@@ -4,7 +4,7 @@ Spawns an Actor at the player's position. If the actor is a projectile, fire it 
 
 ## Parameters
 ```
-Actor - The actor to spawn.
+Actor - The actor to spawn. (Required)
 ```
 
 `Actor` must be a valid Actor class. It does no collision checks so spawning solid actors this way is not recommended.
