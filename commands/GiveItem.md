@@ -4,7 +4,7 @@ Gives the streamer an item directly.
 
 ## Parameters
 ```
-Actor - The actor to give to the player.
+Actor - The actor to give to the player. (Required)
 Amount - The amount of the inventory to give to the player (Default 1).
 ```
 
