@@ -4,7 +4,7 @@ Gives a random living monster in the level an Inventory item. Only useful for cu
 
 ## Parameters
 ```
-Actor - The Inventory Actor to give the monster.
+Actor - The Inventory Actor to give the monster. (Required)
 Radius - The radius near the player to try to find a random monster for the item (default is the whole map).
 AddName=true - Add the user's name to the monster too.
 ```
