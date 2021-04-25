@@ -4,7 +4,7 @@ TwitchyDoom is a mod for GZDoom that allows Streamlabs Chatbot users to create c
 
 # Installation
 
-First, you must have Streamlabs Chatbot (free) installed and have a working chatbot linked to your main Twitch.tv account. There are many installation guides and videos on this, but here's the official one: https://cdn.streamlabs.com/chatbot/Documentation_Twitch.pdf
+First, you must have [Streamlabs Chatbot](https://streamlabs.com/chatbot) (free) installed and have a working chatbot linked to your main Twitch.tv account. There are many installation guides and videos on this, but here's the official one: https://cdn.streamlabs.com/chatbot/Documentation_Twitch.pdf
 
 Next, you will need a directory on your computer with a single file in it called STREAM.txt. This file will be written to by the chatbot, and read by GZDoom. You do not need to touch this file after creating it. GZdoom will read the entire directory so don't put any other files in this folder.
 
