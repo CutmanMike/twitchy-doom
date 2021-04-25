@@ -1,6 +1,8 @@
 # TwitchyDoom
 
-TwitchyDoom is a mod for GZDoom that allows Streamlabs Chatbot users to create commands that interact with GZDoom, allowing viewers to interact with their streams.
+TwitchyDoom is a mod for GZDoom that allows Twitch streamers to create commands that interact with GZDoom, allowing viewers to interact with their streams.
+
+Currently only tested with Streamlabs Chatbot.
 
 # Installation
 
