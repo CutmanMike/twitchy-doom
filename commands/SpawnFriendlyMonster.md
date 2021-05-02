@@ -1,10 +1,11 @@
 # SpawnFriendlyMonster
 
-Spawns a friendly version of the specified monster next to the player, which will help the player fight other monsters. The monster has the username of the person who sent the command will appear above it as long as it is in the players's line of sight.
+Spawns a friendly version of the specified monster next to the player, which will help the player fight other monsters. The monster has the username of the person who sent the command will appear above it as long as it is in the players's line of sight. If the player goes too far away from the friendly monster, they will spawn near the player after a short time.
 
 ## Parameters
 ```
 Actor - The actor to spawn.
+nofollow=true - The actor will not teleport to the player if they are too far away.
 ShowMap=true - The actor will be shown on the automap.
 ```
 
