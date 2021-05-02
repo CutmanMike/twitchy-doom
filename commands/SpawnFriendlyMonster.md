@@ -5,6 +5,7 @@ Spawns a friendly version of the specified monster next to the player, which wil
 ## Parameters
 ```
 Actor - The actor to spawn.
+ShowMap=true - The actor will be shown on the automap.
 ```
 
 `Actor` should be a valid Actor class. If the monster class is invalid, it will choose a random monster from the existing pool of monsters.
