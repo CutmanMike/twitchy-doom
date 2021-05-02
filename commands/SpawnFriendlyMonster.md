@@ -5,7 +5,7 @@ Spawns a friendly version of the specified monster next to the player, which wil
 ## Parameters
 ```
 Actor - The actor to spawn.
-nofollow=true - The actor will not teleport to the player if they are too far away.
+NoFollow=true - The actor will not teleport to the player if they are too far away.
 ShowMap=true - The actor will be shown on the automap.
 ```
 
