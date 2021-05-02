@@ -9,6 +9,7 @@ Distance - The minimum distance away from the player (in 128 map units) in order
 Distance=Random - Use a random distance.
 Effect - The effect actor to spawn when the Actor is spawned. Default is TeleportFog.
 NoLOS=true - Spawn the actor even if a player is in line of sight.
+ShowMap=true - The actor will be shown on the automap.
 ```
 
 `Actor` should be a valid Actor class. If the class is a RandomSpawner, it will choose an actor from the result of that RandomSpawner.
