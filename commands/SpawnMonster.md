@@ -9,6 +9,7 @@ Distance - The minimum distance away from the player (in 128 map units) in order
 Distance=Random - Use a random distance.
 Effect - The effect actor to spawn when the Actor is spawned.
 NoLOS=true - Spawn the actor even if a player is in line of sight.
+ShowMap=true - The actor will be shown on the automap.
 ```
 
 `Actor` should be a valid Actor class. If the monster class is invalid, it will choose a random monster from the existing pool of monsters.
