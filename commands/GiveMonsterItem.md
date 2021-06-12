@@ -6,12 +6,13 @@ Gives a random living monster in the level an Inventory item. Only useful for cu
 ```
 Actor - The Inventory Actor to give the monster. (Required)
 Radius - The radius near the player to try to find a random monster for the item (default is the whole map).
+Capradius - Do not exceed the Radius parameter to try to find a monster.
 AddName=true - Add the user's name to the monster too.
 ```
 
 `Actor` must be a valid Inventory item. 
 
-If `Radius` is specified, it will try to give the item to a monster near the player within `Radius` * 128 map units. If it can't, the radius is increased until it finds a monster.
+If `Radius` is specified, it will try to give the item to a monster near the player within `Radius` * 128 map units. If it can't, the radius is increased until it finds a monster (unless the capradius parameter is specified).
 
 ## Examples
 
