@@ -1,6 +1,6 @@
 # TwitchyDoom
 
-TwitchyDoom is a mod for GZDoom that allows Twitch streamers to create commands that interact with GZDoom, allowing viewers to interact with their streams.
+TwitchyDoom is a mod for [GZDoom](https://www.zdoom.org/index) that allows [Twitch](https://www.twitch.tv/) streamers to create commands that interact with GZDoom, allowing viewers to interact with their streams.
 
 Currently only tested with Streamlabs Chatbot.
 
@@ -16,11 +16,11 @@ Here's an example launching with [ZDL](https://zdoom.org/wiki/ZDL):
 
 ![Example Launch](examples/example_zdl.png)
 
-To confirm everything is set up, boot up GZDoom. You should see a message confirming the game is working. If you don't get a message, TwitchyDoom pk3 is missing. If you get an error, your launcher is not pointing to the STREAM.txt folder correctly.
+To confirm everything is set up, boot up GZDoom. You should see a message confirming the game is working. If you don't get a message, the TwitchyDoom pk3 is missing. If you get an error, your launcher is not pointing to the STREAM.txt folder correctly.
 
 # Adding Commands
 
-To add a command that works with TwitchyDoom, first click the Add Command button in the Streamlabs Chatbot client. You can name the command whatever you like, and alter the costs and cooldowns etc as you please. The important part is the Response field. This needs to contain the following data:
+To add a command that works with TwitchyDoom, first click the Add Command button in the Streamlabs Chatbot client. You can name the command whatever you like and alter the costs, cooldowns, etc. as you please. The important part is the **Response** field. This needs to contain the following data:
 
 ```
 $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
@@ -32,16 +32,17 @@ $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
 
 `PARAMETERS` are any paramaters the TwitchyDoom command you've chosen supports. Parameters are seperated by a comma (no spaces) and each command has specific parameters you can use. Using the same example of SpawnMonster, the command requires an `Actor` parameter to function. If you wanted this command to spawn an Archvile, you would replace `PARAMETERS` with `Actor=Archvile`. See each command's page to find their parameters and what they do.
 
-Note: If you do not wish to declare any parameters or the command does not use them, you must still include all three |'s in the response. I.e SpawnMonster||$username|$dummyormsg
+__Note__: If you do _not_ wish to declare any parameters or the command does not use them, you must still include all three |'s in the response. i.e `SpawnMonster||$username|$dummyormsg`
 
-$username and $dummyormsg should be left alone. These retrieve the username and text sent by the viewer.
+`$username` and `$dummyormsg` should be left alone. These retrieve the username and text sent by the viewer.
 
 Here's an example of what response field should look like (assuming your STREAM.txt is in C:\MyFiles\Stream\):
 
 ```
 $savetofile("C:\MyFiles\Stream\STREAM.txt","SpawnItem|Actor=Medikit|$username|$dummyormsg")
 ```
-Which would trigger the SpawnItem TwitchyDoom command, spawning a Medikit near the player.
+
+Which would trigger the `SpawnItem` TwitchyDoom command, spawning a Medikit near the player.
 
 Here's an example image of a command that spawns a Cacodemon:
 
@@ -70,13 +71,11 @@ Note that you can test your commands even when your stream is offline.
 
 These parameters can be used with all commands.
 
-`Delay=x` Delays the command by x seconds. Notification messages are sent first, so this is useful if you want to give the player a warning before the command is executed.
+* `Delay=x`: delays the command by x seconds. Notification messages are sent first, so this is useful if you want to give the player a warning before the command is executed.
+* `NoNotify=true`: removes any messsages sent to the player from the command, if the command usually sends any.
+* `NoName=true`: removes the username from any actors spawned via the command that would display them usually.
 
-`NoNotify=true` - Removes any messsages sent to the player from the command, if the command usually sends any.
-
-`NoName=true` - Removes the username from any actors spawned via the command that would display them usually.
-
-# Creating new Command classes
+# Creating New Command Classes
 
 TODO
 
