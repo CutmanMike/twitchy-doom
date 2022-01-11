@@ -32,7 +32,7 @@ $savetofile("FILEPATH","COMMAND|PARAMETERS|$username|$dummyormsg")
 
 `PARAMETERS` are any paramaters the TwitchyDoom command you've chosen supports. Parameters are seperated by a comma (no spaces) and each command has specific parameters you can use. Using the same example of SpawnMonster, the command requires an `Actor` parameter to function. If you wanted this command to spawn an Archvile, you would replace `PARAMETERS` with `Actor=Archvile`. See each command's page to find their parameters and what they do.
 
-Note: If you do not wish to declare any parameters or the command does not use them, you must still include all three |'s in the response. I.e `SpawnMonster||$username|$dummyormsg`
+__Note__: If you do _not_ wish to declare any parameters or the command does not use them, you must still include all three |'s in the response. i.e `SpawnMonster||$username|$dummyormsg`
 
 `$username` and `$dummyormsg` should be left alone. These retrieve the username and text sent by the viewer.
 
